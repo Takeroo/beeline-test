@@ -1,0 +1,10 @@
+version: "2.1"
+services:
+  beeline:
+    image: beeline:1.0"
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /etc/timezone:/etc/timezone:ro
+    networks:
+      net:
+        ipv4_address: 172.19.0.5
